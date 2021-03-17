@@ -10,7 +10,7 @@ contract Lottery {
     }
 
     function enter() public payable {
-        require(msg.value >= 10000000 wei);
+        require(msg.value >= 10000000000000000 wei);
         players.push(msg.sender);
     }
 
